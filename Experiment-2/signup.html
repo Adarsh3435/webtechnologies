@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>FACEBOOK</title>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                text-align: center;
+                font-family:'Gill Sans', 'Gill Sans MT';
+                color:rgb(33, 108, 201);
+                font-size: 4em;
+                padding-top: 6%;
+                font-weight: bold;
+            }
+            #d1
+            {
+                background-color: white;
+                text-align: center;
+                margin-left: 30%;
+                margin-right: 30%;
+                padding-top: 2%; 
+                padding-bottom: 4%;
+            }
+            h3{
+                margin-bottom: 4%;
+                font-size: 2em;
+                padding-bottom: 2%;
+            }
+            #t1,#t2,#t3,#t4,#t5,#t6{
+                margin-bottom: 3%;
+            }
+            input[type=text]
+            {
+                width: 70%;
+                height: 5%;
+            }
+            input[type=submit]
+            {
+                margin-top: 3%;
+                width: 50%;
+                height: 5%;
+                background-color:rgb(26, 175, 76);
+                font-size: 120%;
+                color:white;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>facebook</h1>
+        <div id="d1">
+            <br>
+            <h3>Create an account</h3>
+            <form action="v.php" method="post">
+                <input type="text" id="ta1" name="ta1" placeholder="First name" >
+                <input type="text" id="ta2" name="ta2" placeholder="Surname" >
+                <br>
+                <input type="text" id="ta3" name="ta3" placeholder="Mobile number ot email address">
+                <br>
+                <input type="text" id="ta4" name="ta4" placeholder="New password">
+                <br>
+                <label for="ta5"><b>Date of birth</b></label>
+                <br>
+                <input type="date" id="ta5" name="ta5">
+                <br>
+                <label for="ta6" ><b>Gender</b></label>
+                <br>
+                <input type="radio" id="ta6" name="ta6" value="Female">Female
+                <input type="radio" id="ta6" name="ta6" value="Male">Male 
+                <input type="radio" id="ta6" name="ta6" value="Custom">Custom
+                <br>
+                <input type="submit" id="ba1" name="ba1" value="Sign Up"> 
+                <br>
+                <br>
+                <a href="face.php">Already have an account</a>
+
+            </form>
+        </div>
+    </body>
+</html>
