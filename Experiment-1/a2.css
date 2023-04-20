@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(100,124,178);
+    font-size: larger;
+}
+h1{
+    color: azure;
+    text-align:center;
+    font-style: bold ;
+}
+table{
+    font-style: italic;
+    color:burlywood;
+    font-size: larger;
+}
+form{
+    color: goldenrod;
+    text-align: center;
+}
+label{
+    line-height: 100px;
+    font-size: larger;
+}
+input[type=text]{
+    border: 2px red;
+    border-radius: 4px;
+}
+select{
+    border: 2px blue;
+    border-radius: 10px;
+}

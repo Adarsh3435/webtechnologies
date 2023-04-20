@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color:aqua;
+            }
+            h1{
+                font-style: Bold;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img id="i1" src="an.jpg" alt="anits" width="150" height="150" align="left" onclick="clc()" onmouseout="ou()">
+        <h1 align="center" id="hh" onmouseover="over()" onmouseout="out()">
+            <font size=7>Anil Neerukonda Institute of Technology And Sciences</font></h1>
+       <script>
+        function over()
+        {
+        k=document.getElementById("hh");
+        k.style.color='violet';
+        }
+        function out()
+        {
+        k=document.getElementById("hh");
+        k.style.color='Brown';
+        }
+        function clc()
+        {
+       document.getElementById("i1").setAttribute("src","R.jpg");
+        }
+        function ou()
+        {
+            document.getElementById("i1").setAttribute("src","an.jpg");
+        }
+       </script>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aliceblue;
+            }
+            h1{
+                color:cadetblue;
+                text-align: center;
+                font-size: 350%;
+            }
+            #d1
+            {
+                float:left;
+            }
+            #d2
+            {
+                float:right;
+            }
+            #d3{
+                text-align: center;
+                font-size: 200%;
+                font-style: italic;
+            }
+        </style>
+        <script>
+            let t1=0;
+            let t2=0;
+            let t3=0;
+            let t4=0;
+            let t5=0;
+            let t6=0;
+            function cll1(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+150
+                t1+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi0").textContent="You have selected " + t1 + " burger";
+            }
+            function cll2(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+200
+                t2+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi1").textContent="You have selected " + t2 + " paneer" ;
+            }
+            function cll3(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+250
+                t3+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi2").textContent="You have selected " + t3 + " veg fried rice";
+            }
+            function cll4(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+300
+                t4+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi3").textContent="You have selected " + t4 + " chicken biryani";
+            }
+            function cll5(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+350
+                t5+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi4").textContent="You have selected " + t5 + " prawns";
+            }
+            function cll6(){
+                var x=parseInt(document.getElementById("bill").value);
+                x=x+400
+                t6+=1
+                document.getElementById("bill").value=x;
+                document.getElementById("bi5").textContent="You have selected " + t6 + " tandoori";
+            }
+            function cll7(){
+                const c=document.getElementById("Name").value;
+                const v=document.getElementById("bill").value;
+                alert("thanks for visiting "+ c +" Your total bill is "+ v +" visit us again");
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>AI RESTAURANT</h1>
+        <div id="d1">
+            <img id="ad1" src="burg.jpg" alt="burger" width="150" height="150" onclick="cll1()">
+            <h4>Veg Burger</h4>
+            <p id="p11"></p>
+        <div>
+            <img id="ad2" src="pan.jpg" alt="paneer" width="150" height="150" onclick="cll2()">
+            <h4>Paneer</h4>
+        </div>
+        <div>
+            <img id="ad3" src="vfr.jpg" alt="burger" width="150" height="150" onclick="cll3()">
+            <h4>Veg Fried Rice</h4>
+        </div>
+        </div>
+        <div id="d2">
+        <div >
+            <img id="ad4" src="bi.jpg" alt="biryani" width="150" height="150" onclick="cll4()">
+            <h4>Chicken Biryani</h4>
+        </div>
+        <div >
+            <img id="ad5" src="p.jpg" alt="prawns" width="150" height="150" onclick="cll5()">
+            <h4>Prawns</h4>
+        </div>
+        <div >
+            <img id="ad6" src="ke.jpg" alt="prawns" width="150" height="150" onclick="cll6()">
+            <h4>Tandoori</h4>
+        </div>
+        </div>
+        <div id="d3">
+            <label for="Name">Name:</label>
+            <input type="text" id="Name">
+            <p></p>
+            <label for="Name1">Ph NO:</label>
+            <input type="text"  id="PhNO">
+            <p></p>
+            <label for="bill1">Bill:</label>
+            <input type="text"  id="bill">
+            <p id="bi0"></p>
+            <p id="bi1"></p>
+            <p id="bi2"></p>
+            <p id="bi3"></p>
+            <p id="bi4"></p>
+            <p id="bi5"></p>
+            <button type="button"   onclick="cll7()">Generate</button> 
+            <p id="p12"></p>
+        </div>
+        
+    </body>
+</html>

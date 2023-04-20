@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: darksalmon;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="i1" src="R.jpg" alt="anits" width="350" height="350" align="center" onclick="clc()" onmouseout="ou()">
+        <img id="i2" src="A.jpg" alt="AU" width="350" height="350" align="center" onclick="clc1()" onmouseout="ou1()">
+        <img id="i3" src="g.jpg" alt="Gvp" width="350" height="350" align="center"  onclick="clc2()" onmouseout="ou2()">
+        <img id="i4" src="gi.jpg" alt="gitam" width="350" height="350" align="left"  onclick="clc3()" onmouseout="ou3()">
+        <img src="gi.jpg" alt="gitam" width="350" height="350" align="right">
+    <script>
+            function clc()
+            {
+                document.getElementById("i1").setAttribute("src","A.jpg");
+            }
+            function ou()
+        {
+            document.getElementById("i1").setAttribute("src","R.jpg");
+        }
+        function clc1()
+            {
+                document.getElementById("i2").setAttribute("src","gi.jpg");
+            }
+            function ou1()
+        {
+            document.getElementById("i2").setAttribute("src","A.jpg");
+        }
+        function clc2()
+            {
+                document.getElementById("i3").setAttribute("src","A.jpg");
+            }
+            function ou2()
+        {
+            document.getElementById("i3").setAttribute("src","g.jpg");
+        }
+        function clc3()
+            {
+                document.getElementById("i4").setAttribute("src","A.jpg");
+            }
+            function ou3()
+        {
+            document.getElementById("i4").setAttribute("src","gi.jpg");
+        }
+        
+           </script>
+    </body>
+</html> 
